@@ -113,6 +113,30 @@ input.onGesture(Gesture.Shake, () =>  {
 
 })
 ```
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    randomNumber = randint(0, 6)
+    if (randomNumber == 2) {
+        basic.showString("YES")
+    } else if (randomNumber == 1) {
+        basic.showString("NO")
+    } else {
+        basic.showString("I DONT KNOW ")
+    }
+    if (randomNumber == 3) {
+        basic.showString("THATS UP TO YOU TO DECIDE ")
+    } else if (randomNumber == 4) {
+        basic.showString("DONT ASK ME AGAIN ")
+    } else {
+        basic.showString("ASK A FRIEND AND NOT ME ")
+    }
+    basic.showNumber(8)
+})
+let randomNumber = 0
+basic.showString("ASK A QUESTION ")
+basic.showNumber(8)
+basic.forever(function () {
+
 
 ## ~avatar avatar
 
